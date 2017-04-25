@@ -52,10 +52,10 @@ utilizing only minor configuration.
 # Deployment
 * Install fluentd package
 * Install docker-log-aggregation package
-** Updates docker daemon log driver configuration
-** Installs/pulls required docker containers
-** Installs docker-log-aggregation systemd configuration
-*** Starts required containers through docker-compose
+  * Updates docker daemon log driver configuration
+  * Installs/pulls required docker containers
+  * Installs docker-log-aggregation systemd configuration
+    * Starts required containers through docker-compose
 * Validate logs by accessing through Kibana
 
 # License
