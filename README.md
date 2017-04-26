@@ -35,7 +35,11 @@ might have done to the environment.
 In particular, (FluentBit)[http://fluentbit.io/] will be used as the fluentd daemon 
 running on the docker host. FluentBit is compatible with the fluentd daemon
 but is lighter weight. The only forwarder that is required is to forward to 
-Elasticsearch and that is built as a plugin to FluentBit.
+Elasticsearch and that is built as a plugin to FluentBit. In order to have a 
+distribution specific installation file for FluentBit, use the git repository
+(fluent-bit-packaging)[https://github.com/fluent/fluent-bit-packaging]. The
+FluentBit project does not include a pre-built binary for each Linux 
+distribution, instead preferring to allow you to quickly build it yourself.
 
 For reference, [http://fluentbit.io/articles/docker-logging-elasticsearch/].
 
