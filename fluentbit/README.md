@@ -5,7 +5,7 @@ deployment process.
 ```
 [SERVICE]
     Flush        5        # Process new messages in 5 second chucks
-    Daemon       On       # Run fluentbit as a background daemon
+    Daemon       Off      # Run in foreground, systemd backgrounds it
     Log_Level    debug    # Process debug and higher log entries
 
 [INPUT]

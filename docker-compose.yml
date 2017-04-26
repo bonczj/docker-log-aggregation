@@ -15,8 +15,8 @@ services:
     volumes:
      - elastic_search_data:/usr/share/elasticsearch/data
     ports:
-     - "9200:9200"
-     - "9300:9300"
+     - "29200:9200"
+     - "29300:9300"
 
   kibana:
     image: kibana:latest
