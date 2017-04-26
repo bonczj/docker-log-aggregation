@@ -30,7 +30,14 @@ already running.
 
 The fluentd daemon will be run as a native process on the docker host to ensure
 it is available for every docker container regardless how what the DevOps team
-might have done to the environment.
+might have done to the environment. 
+
+In particular, (FluentBit)[http://fluentbit.io/] will be used as the fluentd daemon 
+running on the docker host. FluentBit is compatible with the fluentd daemon
+but is lighter weight. The only forwarder that is required is to forward to 
+Elasticsearch and that is built as a plugin to FluentBit.
+
+For reference, [http://fluentbit.io/articles/docker-logging-elasticsearch/].
 
 ## Elasticsearch
 The [fluentd](http://www.fluentd.org/) process must write the log data somewhere
